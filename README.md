@@ -4,6 +4,8 @@ A mob/pair programming exercise to give an intro to the practice.
 
 This exercise is great for all levels to practice Mob/Pair Programming using a common code kata.
 
+> Uses Javascript and Jest but can replace the technologies used and still run through the exercises
+
 # Getting started
 
 Fork the repo.
