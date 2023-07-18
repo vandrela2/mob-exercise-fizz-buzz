@@ -15,8 +15,11 @@ const loopCode = (number) => {
   for (i = 1; i <= number; i++) {
     arrayResult.push(prod_code(i));
   }
+  console.log("triggered");
   return arrayResult;
 };
+
+const element = document.getElementById("inputId").value;
 
 describe("Fizz Buzz", () => {
   it("if fizz is returned if the number is divisible by 3", () => {

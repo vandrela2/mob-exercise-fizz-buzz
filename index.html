@@ -13,14 +13,17 @@
       Count
       <input id="inputId" type="number" min="0" value="0" />
     </label>
-    <button onclick="{loopCode((document.getElementById('inputId').value))}">
+    <button onclick="{renderFunc()}">
       Run
     </button>
     <h3>Results:</h3>
+    <p id="output"></p>
     <p id="results" style="background: gray; color: white; padding: 10px"></p>
     <script src="./fizzBuzz.test.js"></script>
     <script>
-      const element = document.getElementById("inputId").value;
+        const renderFunc = () => {
+            const output = document.getElementById("output").innerHTML = loopCode((document.getElementById('inputId').value));
+        }
     </script>
   </body>
 </html>
